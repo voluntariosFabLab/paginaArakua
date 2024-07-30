@@ -22,29 +22,26 @@ const Header = () => {
       icon: "pi pi-home",
     },
     {
-      label: "Features",
+      label: "Acerca de",
       icon: "pi pi-star",
     },
     {
-      label: "Projects",
+      label: "Productos",
       icon: "pi pi-search",
       items: [
         {
-          label: "Core",
+          label: "Arakua",
           icon: "pi pi-bolt",
-          shortcut: "⌘+S",
           template: itemRenderer,
         },
         {
-          label: "Blocks",
+          label: "Extrusor",
           icon: "pi pi-server",
-          shortcut: "⌘+B",
           template: itemRenderer,
         },
         {
           label: "UI Kit",
           icon: "pi pi-pencil",
-          shortcut: "⌘+U",
           template: itemRenderer,
         },
         {
@@ -71,9 +68,8 @@ const Header = () => {
       ],
     },
     {
-      label: "Contact",
+      label: "Contácto",
       icon: "pi pi-envelope",
-      badge: 3,
       template: itemRenderer,
     },
   ];
@@ -102,7 +98,7 @@ const Header = () => {
 
   return (
     <div className="card">
-      <Menubar model={items} start={start} end={end} />
+      <Menubar model={items} start={start} />
     </div>
   );
 };

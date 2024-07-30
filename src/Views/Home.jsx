@@ -1,18 +1,15 @@
-import CarrouselHome from "../Components/Carrousel/CarrouselHome"
-import Header from "../Components/Header/Header"
+import CarrouselHome from "../Components/Carrousel/CarrouselHome";
+import Header from "../Components/Header/Header";
+import Extrusion from "../machines/Extrusion";
+
 const Home = () => {
   return (
     <div>
-        <Header/>
-        <CarrouselHome/>
-        <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas nam culpa maxime nihil modi accusantium minima veritatis quisquam! Neque consectetur, accusantium numquam unde ex reprehenderit cum repellat perspiciatis blanditiis sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam nemo optio voluptatum iusto minus culpa, harum ducimus repellat fuga provident quibusdam. Eum nostrum voluptatibus quae error quo ut non! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit sint aliquam rem quaerat placeat veritatis ut! Vel, nemo fugiat rem temporibus voluptas doloribus sint laboriosam nulla laborum assumenda quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde, nihil pariatur commodi, sed sunt quibusdam ad, magnam veniam voluptas nobis! Aut aspernatur nemo necessitatibus cumque, corrupti illo iure architecto?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas nam culpa maxime nihil modi accusantium minima veritatis quisquam! Neque consectetur, accusantium numquam unde ex reprehenderit cum repellat perspiciatis blanditiis sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam nemo optio voluptatum iusto minus culpa, harum ducimus repellat fuga provident quibusdam. Eum nostrum voluptatibus quae error quo ut non! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit sint aliquam rem quaerat placeat veritatis ut! Vel, nemo fugiat rem temporibus voluptas doloribus sint laboriosam nulla laborum assumenda quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde, nihil pariatur commodi, sed sunt quibusdam ad, magnam veniam voluptas nobis! Aut aspernatur nemo necessitatibus cumque, corrupti illo iure architecto?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas nam culpa maxime nihil modi accusantium minima veritatis quisquam! Neque consectetur, accusantium numquam unde ex reprehenderit cum repellat perspiciatis blanditiis sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam nemo optio voluptatum iusto minus culpa, harum ducimus repellat fuga provident quibusdam. Eum nostrum voluptatibus quae error quo ut non! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit sint aliquam rem quaerat placeat veritatis ut! Vel, nemo fugiat rem temporibus voluptas doloribus sint laboriosam nulla laborum assumenda quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde, nihil pariatur commodi, sed sunt quibusdam ad, magnam veniam voluptas nobis! Aut aspernatur nemo necessitatibus cumque, corrupti illo iure architecto?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas nam culpa maxime nihil modi accusantium minima veritatis quisquam! Neque consectetur, accusantium numquam unde ex reprehenderit cum repellat perspiciatis blanditiis sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quisquam nemo optio voluptatum iusto minus culpa, harum ducimus repellat fuga provident quibusdam. Eum nostrum voluptatibus quae error quo ut non! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem reprehenderit sint aliquam rem quaerat placeat veritatis ut! Vel, nemo fugiat rem temporibus voluptas doloribus sint laboriosam nulla laborum assumenda quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde, nihil pariatur commodi, sed sunt quibusdam ad, magnam veniam voluptas nobis! Aut aspernatur nemo necessitatibus cumque, corrupti illo iure architecto?
-        </div>
+      <Header />
+      <CarrouselHome />
+      <div>Descubra la amplia gama de soluciones de automatización de KUKA</div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

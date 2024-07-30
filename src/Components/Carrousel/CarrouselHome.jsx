@@ -26,15 +26,20 @@ export default function CarrouselHome() {
 
   const itemTemplate = (item) => {
     return (
-      <img
-        src={item.itemImageSrc}
-        alt={item.alt}
-        style={{display: "block" }} 
-        className="img-carrousel"
-      />
+      <>
+        <div className="tapImage-carrousel" >
+          <p>{item.title}</p>
+        </div>
+        <img
+          src={item.itemImageSrc}
+          alt={item.alt}
+          style={{ display: "block" }}
+          className="img-carrousel"
+        />
+      </>
     );
   };
-/* style={{ width: "100%", display: "block", objectFit:"contain" }} */
+  /* style={{ width: "100%", display: "block", objectFit:"contain" }} */
   const thumbnailTemplate = (item) => {
     return (
       <img
@@ -44,16 +49,15 @@ export default function CarrouselHome() {
       />
     );
   };
-
+  /* style={{width: "100%", height:"100%" }} */
   return (
     <div className="containerCarrousel">
       <Galleria
         value={images}
-        responsiveOptions={responsiveOptions}
-        numVisible={5}
-        style={{width: "100%", height:"100%" }}
+        style={{ width: "100%", height: "100%" }}
+        showThumbnails={false}
+        showIndicators
         item={itemTemplate}
-        thumbnail={thumbnailTemplate}
         circular
         autoPlay
         transitionInterval={2000}
