@@ -4,6 +4,8 @@ import Header from "./Components/Header/Header";
 import Home from "./Views/Home";
 import Contact from "./Views/Contact/Contact";
 import "./App.css"; // Asegúrate de tener un archivo CSS si es necesario
+import Footer from "./Components/Footer/Footer";
+import About from "./Views/About/About";
 
 const App = () => {
   return (
@@ -12,9 +14,11 @@ const App = () => {
       <div className="containerApp"> {/* Contenedor principal */}
         <Routes> {/* Definimos las rutas aquí */}
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           {/* Puedes añadir más rutas según sea necesario */}
         </Routes>
+        <Footer/>
       </div>
     </Router>
   );

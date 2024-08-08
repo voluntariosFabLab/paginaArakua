@@ -1,10 +1,13 @@
 import CarrouselHome from "../Components/Carrousel/CarrouselHome";
+import IndexHome from "../Components/IndexHome/IndexHome";
 
 const Home = () => {
   return (
-    <div className="container-home" >
+    <div className="container-home">
       <CarrouselHome />
-      <div>Descubra la amplia gama de soluciones de automatización de KUKA</div>
+      <div className="container-details-home" >
+        <IndexHome />
+      </div>
     </div>
   );
 };

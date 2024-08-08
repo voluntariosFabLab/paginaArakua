@@ -1,13 +1,13 @@
-import React from 'react'
+import "./Contact.css"
+import ContactForm from '../../Components/ContactForm/ContactForm'
 
 const Contact = () => {
   return (
     <div className='containerContactForm' >
-      <form action="">
-        <input type="text" />
-        <input type="text" />
-        <input type="submit" value="Enviar" />
-      </form>
+   
+      <h3>Contacto</h3>
+      <ContactForm/>
+      <p>Déjanos tus datos y nos pondremos en contacto contigo</p>
     </div>
   )
 }

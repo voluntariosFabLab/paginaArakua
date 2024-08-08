@@ -33,7 +33,7 @@ const Header = () => {
       navigateTo: "/about", // Ruta de navegación
       template: itemRenderer,
     },
-    {
+    /* {
       label: "Productos",
       icon: "pi pi-search",
       items: [
@@ -79,7 +79,7 @@ const Header = () => {
           ],
         },
       ],
-    },
+    }, */
     {
       label: "Contacto",
       icon: "pi pi-envelope",
@@ -90,7 +90,8 @@ const Header = () => {
 
   // Logo de inicio
   const start = (
-    <section className="logo-container">
+    <div >
+      <Link to="/" className="logo-container" >
       <p>ARAKUAA</p>
       <img
         alt="logo"
@@ -98,7 +99,8 @@ const Header = () => {
         height="80"
         className="mr-2"
       ></img>
-    </section>
+    </Link>
+    </div>
   );
 
   // Elementos al final del Menubar

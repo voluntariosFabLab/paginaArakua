@@ -1,0 +1,41 @@
+.form-component{
+    width: 100%;
+    padding:30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 760px;
+    box-shadow: 1px 1px 10px #aaa5;
+    border-radius: 15px;
+}
+.form-component > div{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.form-component > div > input, textarea  {
+    padding: 5px;
+    border-style: none;
+    border: 1px solid #43484666;
+    border-radius: 4px;
+    resize: none;
+}
+
+.form-component > button{
+    padding: 5px;
+    background-color: #62c3d4;
+    border-style: none;
+    border-radius: 4px;
+    color: #434846;
+    font-weight: 600;
+    cursor: pointer;
+}
+.form-component > button:hover{
+    background-color: #4abbcf;
+}
+@media (width < 960px){
+.form-component{
+    
+}
+}

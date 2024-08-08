@@ -1,0 +1,102 @@
+.containerIndexHome{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    font-family: "Onest", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.title-home-h1{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    padding-top: 50px;
+}
+.section1, .section2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;   
+
+}
+.section1 > p, .section2 > p { 
+    width: 100%;
+    max-width: 600px;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.section1 > img, .section2 > img { 
+    width: 100%;
+    max-width: 500px;
+    
+}
+.section1 > p{ 
+    view-timeline-name: --reveal;
+    animation-name: smoothImgToRight;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50% ;
+    /* animation: smoothImg 3s infinite ease-out ; */
+}
+.section2 > img { 
+    view-timeline-name: --reveal;
+    animation-name: smoothImgToRight;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50% ;
+    /* animation: smoothImg 3s infinite ease-out ; */
+}
+.section2 > p{ 
+    view-timeline-name: --reveal;
+    animation-name: smoothImgToLeft;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50% ;
+    /* animation: smoothImg 3s infinite ease-out ; */
+}
+.section1 > img { 
+    view-timeline-name: --reveal;
+    animation-name: smoothImgToLeft;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50% ;
+    /* animation: smoothImg 3s infinite ease-out ; */
+}
+
+@keyframes smoothImgToRight {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes smoothImgToLeft {
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@media (width < 960px){
+    .containerIndexHome{
+        margin: 0;
+    }
+    .section1, .section2 { 
+        flex-direction: column;
+    }
+    .section1 > p, .section2 > p {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+}
