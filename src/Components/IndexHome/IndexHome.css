@@ -67,7 +67,14 @@
     animation-range: entry 25% cover 50% ;
     /* animation: smoothImg 3s infinite ease-out ; */
 }
-
+.div-bottles-plastic-index{
+    width: 100%;
+    text-align: start;
+}
+.bottles-plastic-index{
+    width: 100%;
+    max-width: 500px;
+}
 @keyframes smoothImgToRight {
     from{
         opacity: 0;
