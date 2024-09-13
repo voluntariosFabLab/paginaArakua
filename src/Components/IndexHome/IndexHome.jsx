@@ -1,9 +1,10 @@
 import "./IndexHome.css";
-
+import bottles from "./assets/bottlesDraw2.png"
 const IndexHome = () => {
   return (
     <div className="containerIndexHome">
       <h1 className="title-home-h1">ARAKUAA</h1>
+      <div className="div-bottles-plastic-index"><img src={bottles} alt="bottles" className="bottles-plastic-index" /></div>
       <div className="section1">
         <p>
           Bienvenido a Arakuaa, una innovadora solución para transformar
@@ -17,6 +18,7 @@ const IndexHome = () => {
       <br />
       <br />
       <br />
+     
       <br />
       <div className="section2">
         <img src="./GALLERY1.png" alt="MACHINEImg" />

@@ -81,6 +81,30 @@ const Header = () => {
       ],
     }, */
     {
+      label: "Maquinas",
+      icon: "pi pi-cog",
+      items: [
+        {
+          label: "Arakua",
+          icon: "pi pi-bolt",
+          navigateTo: "/products/arakua", // Añadir rutas específicas si es necesario
+          template: itemRenderer,
+        },
+        {
+          label: "Extrusor",
+          icon: "pi pi-server",
+          navigateTo: "/products/extrusor",
+          template: itemRenderer,
+        },
+        {
+          label: "UI Kit",
+          icon: "pi pi-pencil",
+          navigateTo: "/products/ui-kit",
+          template: itemRenderer,
+        },
+      ],
+    },
+    {
       label: "Contacto",
       icon: "pi pi-envelope",
       navigateTo: "/contact", // Ruta de navegación
@@ -90,23 +114,27 @@ const Header = () => {
 
   // Logo de inicio
   const start = (
-    <div >
-      <Link to="/" className="logo-container" >
-      <p>ARAKUAA</p>
-      <img
-        alt="logo"
-        src="https://lh3.googleusercontent.com/a/ACg8ocJhT_rOTs429j-jnxGXISqRWFXiatbP4bhKUEsiAvKgVyCtfX8=s360-c-no"
-        height="80"
-        className="mr-2"
-      ></img>
-    </Link>
+    <div>
+      <Link to="/" className="logo-container">
+        <p>ARAKUAA</p>
+        <img
+          alt="logo"
+          src="https://lh3.googleusercontent.com/a/ACg8ocJhT_rOTs429j-jnxGXISqRWFXiatbP4bhKUEsiAvKgVyCtfX8=s360-c-no"
+          height="80"
+          className="mr-2"
+        ></img>
+      </Link>
     </div>
   );
 
   // Elementos al final del Menubar
   const end = (
     <div className="flex align-items-center gap-2">
-      <InputText placeholder="Search" type="text" className="w-8rem sm:w-auto" />
+      <InputText
+        placeholder="Search"
+        type="text"
+        className="w-8rem sm:w-auto"
+      />
       <Avatar
         image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png"
         shape="circle"
@@ -118,7 +146,7 @@ const Header = () => {
   return (
     <>
       <div className="card">
-        <Menubar model={items}  end={start} />
+        <Menubar model={items} end={start} />
       </div>
       <Outlet />
     </>
@@ -126,7 +154,6 @@ const Header = () => {
 };
 
 export default Header;
-
 
 /* import { Menubar } from "primereact/menubar";
 import { InputText } from "primereact/inputtext";

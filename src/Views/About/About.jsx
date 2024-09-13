@@ -1,10 +1,11 @@
 import "./About.css";
 import videoArakua from "./assets/about-video.mp4";
 import gallery from "./assets/ARTESAN.png";
-
+import bottles from "./assets/botellas-plasticos.png";
 const About = () => {
   return (
     <div className="containerAbout">
+      <img src={bottles} className="bg-bottles-about" alt="bg-bottles" />
       <div className="about-section">
         <section className="section1-what-is-arakuaa">
           <div>
@@ -24,7 +25,7 @@ const About = () => {
         <br />
         <br />
         <br />
-        <div className="section2-div" >
+        <div className="section2-div">
           <h3>Nuestra Inspiración</h3>
           <h4>Raíces Guaraní Isoseñas</h4>
           <div>
